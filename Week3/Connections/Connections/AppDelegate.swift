@@ -1,13 +1,11 @@
 //
 //  AppDelegate.swift
-//  AutolayoutFun
+//  Connections
 //
-//  Created by Bennett Lee on 8/29/22.
+//  Created by Bennett Lee on 9/7/22.
 //
 
 import UIKit
-
-
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
