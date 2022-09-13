@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var greetLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
 
     @IBAction func sayHiDidTapped(_ sender: UIButton) {
         greetLabel.text = "Hi"
+        sender.backgroundColor = UIColor.green
     }
     
 }
