@@ -90,6 +90,20 @@ class ViewController: UIViewController {
             story += "Things didn't turn out so well..."
         }
         
+        // Present an alert to show the story
+        let alert = UIAlertController(title: "The Story", message: story, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
+        
+        // The story continues...with closures!!!
+//        let yoloAction = UIAlertAction(title: "Yolo", style: .destructive, handler: <#T##((UIAlertAction) -> Void)?##((UIAlertAction) -> Void)?##(UIAlertAction) -> Void#>)
+        
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+//        alert.addAction(yoloAction)
+
+        present(alert, animated: true)
         
         print(story)
     }
