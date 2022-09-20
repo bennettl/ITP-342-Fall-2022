@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F33A1BB2-8828-457B-9C60-745636952618"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE166F42-CE6D-493C-854A-99A642907B10"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnotherRandomQuoteGenerator/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "addDidTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BE166F42-CE6D-493C-854A-99A642907B10 - 70860b88154a0fb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnotherRandomQuoteGenerator.ViewController.addDidTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "AnotherRandomQuoteGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bennettlee/Desktop/ITP/342/10.%20Fall%20&apos;22/Github/Week4/AnotherRandomQuoteGenerator/AnotherRandomQuoteGenerator/Controller/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "BE166F42-CE6D-493C-854A-99A642907B10 - 70860b88154a0fb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AnotherRandomQuoteGenerator.ViewController.addDidTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "AnotherRandomQuoteGenerator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bennettlee/Desktop/ITP/342/10.%20Fall%20&apos;22/Github/Week4/AnotherRandomQuoteGenerator/AnotherRandomQuoteGenerator/Controller/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "328">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE3B0054-2805-4463-8AFD-3A4D9113F246"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnotherRandomQuoteGenerator/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "add(firstNumber:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24C71B37-B819-4279-9E0B-D06A07F698AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnotherRandomQuoteGenerator/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "addDidTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D1B2CEF-EF38-42C5-A4C0-8BC29EFA8DF3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnotherRandomQuoteGenerator/Controller/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
