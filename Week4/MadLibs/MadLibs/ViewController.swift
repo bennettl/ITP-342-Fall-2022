@@ -95,6 +95,12 @@ class ViewController: UIViewController {
         
         let okAction = UIAlertAction(title: "Ok", style: .default)
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
+       
+        
+//        UIAlertAction(title: "Ok", style: .default) { action in
+//            // Execute code here when the user taps on the Ok button
+//        }
+        
         
         // The story continues...with closures!!!
 //        let yoloAction = UIAlertAction(title: "Yolo", style: .destructive, handler: <#T##((UIAlertAction) -> Void)?##((UIAlertAction) -> Void)?##(UIAlertAction) -> Void#>)

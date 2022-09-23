@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D024AF728DBFDA80029061B /* AnotherRandomQuoteGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D024AF628DBFDA80029061B /* AnotherRandomQuoteGeneratorTests.swift */; };
 		4DFCF09F28D2C1BA005D34C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCF09E28D2C1BA005D34C0 /* AppDelegate.swift */; };
 		4DFCF0A128D2C1BA005D34C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCF0A028D2C1BA005D34C0 /* SceneDelegate.swift */; };
 		4DFCF0A328D2C1BA005D34C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCF0A228D2C1BA005D34C0 /* ViewController.swift */; };
@@ -17,7 +18,19 @@
 		4DFCF0B928D2C363005D34C0 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFCF0B828D2C363005D34C0 /* QuoteService.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4D024AF828DBFDA80029061B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DFCF09328D2C1BA005D34C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DFCF09A28D2C1BA005D34C0;
+			remoteInfo = AnotherRandomQuoteGenerator;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4D024AF428DBFDA80029061B /* AnotherRandomQuoteGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnotherRandomQuoteGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D024AF628DBFDA80029061B /* AnotherRandomQuoteGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherRandomQuoteGeneratorTests.swift; sourceTree = "<group>"; };
 		4DFCF09B28D2C1BA005D34C0 /* AnotherRandomQuoteGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnotherRandomQuoteGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFCF09E28D2C1BA005D34C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DFCF0A028D2C1BA005D34C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +44,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D024AF128DBFDA80029061B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DFCF09828D2C1BA005D34C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +61,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D024AF528DBFDA80029061B /* AnotherRandomQuoteGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D024AF628DBFDA80029061B /* AnotherRandomQuoteGeneratorTests.swift */,
+			);
+			path = AnotherRandomQuoteGeneratorTests;
+			sourceTree = "<group>";
+		};
 		4DFCF09228D2C1BA005D34C0 = {
 			isa = PBXGroup;
 			children = (
 				4DFCF09D28D2C1BA005D34C0 /* AnotherRandomQuoteGenerator */,
+				4D024AF528DBFDA80029061B /* AnotherRandomQuoteGeneratorTests */,
 				4DFCF09C28D2C1BA005D34C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				4DFCF09B28D2C1BA005D34C0 /* AnotherRandomQuoteGenerator.app */,
+				4D024AF428DBFDA80029061B /* AnotherRandomQuoteGeneratorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +138,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D024AF328DBFDA80029061B /* AnotherRandomQuoteGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D024AFC28DBFDA80029061B /* Build configuration list for PBXNativeTarget "AnotherRandomQuoteGeneratorTests" */;
+			buildPhases = (
+				4D024AF028DBFDA80029061B /* Sources */,
+				4D024AF128DBFDA80029061B /* Frameworks */,
+				4D024AF228DBFDA80029061B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D024AF928DBFDA80029061B /* PBXTargetDependency */,
+			);
+			name = AnotherRandomQuoteGeneratorTests;
+			productName = AnotherRandomQuoteGeneratorTests;
+			productReference = 4D024AF428DBFDA80029061B /* AnotherRandomQuoteGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4DFCF09A28D2C1BA005D34C0 /* AnotherRandomQuoteGenerator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DFCF0AF28D2C1BB005D34C0 /* Build configuration list for PBXNativeTarget "AnotherRandomQuoteGenerator" */;
@@ -135,6 +183,10 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					4D024AF328DBFDA80029061B = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 4DFCF09A28D2C1BA005D34C0;
+					};
 					4DFCF09A28D2C1BA005D34C0 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -154,11 +206,19 @@
 			projectRoot = "";
 			targets = (
 				4DFCF09A28D2C1BA005D34C0 /* AnotherRandomQuoteGenerator */,
+				4D024AF328DBFDA80029061B /* AnotherRandomQuoteGeneratorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D024AF228DBFDA80029061B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DFCF09928D2C1BA005D34C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +232,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D024AF028DBFDA80029061B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D024AF728DBFDA80029061B /* AnotherRandomQuoteGeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4DFCF09728D2C1BA005D34C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +253,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D024AF928DBFDA80029061B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DFCF09A28D2C1BA005D34C0 /* AnotherRandomQuoteGenerator */;
+			targetProxy = 4D024AF828DBFDA80029061B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4DFCF0A428D2C1BA005D34C0 /* Main.storyboard */ = {
@@ -206,6 +282,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4D024AFA28DBFDA80029061B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.AnotherRandomQuoteGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnotherRandomQuoteGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AnotherRandomQuoteGenerator";
+			};
+			name = Debug;
+		};
+		4D024AFB28DBFDA80029061B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.AnotherRandomQuoteGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnotherRandomQuoteGenerator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AnotherRandomQuoteGenerator";
+			};
+			name = Release;
+		};
 		4DFCF0AD28D2C1BB005D34C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,6 +487,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D024AFC28DBFDA80029061B /* Build configuration list for PBXNativeTarget "AnotherRandomQuoteGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D024AFA28DBFDA80029061B /* Debug */,
+				4D024AFB28DBFDA80029061B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4DFCF09628D2C1BA005D34C0 /* Build configuration list for PBXProject "AnotherRandomQuoteGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
