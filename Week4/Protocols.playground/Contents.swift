@@ -1,4 +1,23 @@
-import Foundation
+import UIKit
+
+
+
+class ViewController : UIViewController, UITextFieldDelegate {
+    
+    weak var textField: UITextField?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        textField?.delegate = self
+    }
+    
+    
+}
+
+protocol UITextFieldDelegate {
+    optional func textFieldShouldReturn(_ textField: UITextField) -> Bool
+}
 
 
 // Delegation
