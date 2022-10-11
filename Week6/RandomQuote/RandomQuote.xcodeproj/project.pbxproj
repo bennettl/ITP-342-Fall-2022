@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D890FA328EE717100982424 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D890FA228EE717100982424 /* QuotesViewController.swift */; };
+		4D890FD128F504E200982424 /* NewQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D890FD028F504E200982424 /* NewQuoteViewController.swift */; };
 		4DAE3F9328E5254500A27C8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE3F9228E5254500A27C8A /* AppDelegate.swift */; };
 		4DAE3F9528E5254500A27C8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE3F9428E5254500A27C8A /* SceneDelegate.swift */; };
 		4DAE3F9728E5254500A27C8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE3F9628E5254500A27C8A /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		4D890FA228EE717100982424 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		4D890FD028F504E200982424 /* NewQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuoteViewController.swift; sourceTree = "<group>"; };
 		4DAE3F8F28E5254500A27C8A /* RandomQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAE3F9228E5254500A27C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DAE3F9428E5254500A27C8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			children = (
 				4DAE3F9628E5254500A27C8A /* ViewController.swift */,
 				4D890FA228EE717100982424 /* QuotesViewController.swift */,
+				4D890FD028F504E200982424 /* NewQuoteViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				4DAE400328E5332100A27C8A /* Quote.swift in Sources */,
 				4D890FA328EE717100982424 /* QuotesViewController.swift in Sources */,
+				4D890FD128F504E200982424 /* NewQuoteViewController.swift in Sources */,
 				4DAE3F9728E5254500A27C8A /* ViewController.swift in Sources */,
 				4DAE400528E5336400A27C8A /* QuoteService.swift in Sources */,
 				4DAE3F9328E5254500A27C8A /* AppDelegate.swift in Sources */,

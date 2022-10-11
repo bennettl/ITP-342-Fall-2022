@@ -53,7 +53,7 @@
             </objects>
             <point key="canvasLocation" x="974" y="27"/>
         </scene>
-        <!--Quotes View Controller-->
+        <!--Quotes-->
         <scene sceneID="PRv-cP-Vz1">
             <objects>
                 <viewController id="xRc-F7-5Px" customClass="QuotesViewController" customModule="RandomQuote" customModuleProvider="target" sceneMemberID="viewController">
@@ -62,7 +62,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LXz-ru-B1z">
-                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <rect key="frame" x="0.0" y="70" width="390" height="726"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -92,18 +92,98 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="xRc-F7-5Px" id="MGO-9k-yv6"/>
+                                    <outlet property="dataSource" destination="xRc-F7-5Px" id="J58-Nm-Wiz"/>
+                                    <outlet property="delegate" destination="xRc-F7-5Px" id="Kwx-h5-eCl"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w4l-7W-87K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="jkz-uL-Gld"/>
+                    <navigationItem key="navigationItem" title="Quotes" id="iAT-jT-SyQ">
+                        <barButtonItem key="leftBarButtonItem" title="Add" id="Syq-ak-xkb">
+                            <connections>
+                                <segue destination="jaz-TG-WQb" kind="presentation" identifier="NewPostSegue" modalPresentationStyle="fullScreen" id="PK1-OV-oep"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="H2H-cU-rOb">
+                            <connections>
+                                <action selector="editButtonDidTapped:" destination="xRc-F7-5Px" id="ZTW-FF-dZT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="LXz-ru-B1z" id="bCc-Cp-VTl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l6X-hN-XSB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.84615384615381" y="688.86255924170609"/>
+            <point key="canvasLocation" x="1766" y="697"/>
+        </scene>
+        <!--New Quote View Controller-->
+        <scene sceneID="YqD-gf-ZPV">
+            <objects>
+                <viewController id="jaz-TG-WQb" customClass="NewQuoteViewController" customModule="RandomQuote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mdW-9M-2WJ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0sA-7L-ZIP">
+                                <rect key="frame" x="67" y="253" width="261" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jaz-TG-WQb" id="7lW-ik-ctq"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRP-Yo-gzm">
+                                <rect key="frame" x="67" y="377" width="261" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SUBMIT"/>
+                                <connections>
+                                    <action selector="submitDidTapped:" destination="jaz-TG-WQb" eventType="touchUpInside" id="m9h-n6-3sm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv0-Q7-Qr4">
+                                <rect key="frame" x="67" y="100" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TS-HI-4ef">
+                                <rect key="frame" x="67" y="211" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ghN-f9-TP0">
+                                <rect key="frame" x="67" y="146" width="261" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jaz-TG-WQb" id="KrB-qp-XSI"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qzt-0T-C1O"/>
+                        <color key="backgroundColor" red="0.52301465850515472" green="0.15578149587533005" blue="0.20886611480269349" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sbh-RE-Mux"/>
+                    <connections>
+                        <outlet property="authorTextField" destination="ghN-f9-TP0" id="Djf-Ni-wWJ"/>
+                        <outlet property="messageTextField" destination="0sA-7L-ZIP" id="GVV-IJ-Ipy"/>
+                        <outlet property="submitButton" destination="zRP-Yo-gzm" id="MGR-r7-e10"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I94-JA-Efl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2558" y="697"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yXV-IE-Hb5">
@@ -111,17 +191,37 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CjT-H3-m6a" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Vn-e5-wYy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Vbu-kb-buv"/>
-                        <segue destination="xRc-F7-5Px" kind="relationship" relationship="viewControllers" id="tAW-aS-TyR"/>
+                        <segue destination="5SS-r2-KeM" kind="relationship" relationship="viewControllers" id="tAW-aS-TyR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8L-XN-fR3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="185" y="341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TGp-2S-unu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5SS-r2-KeM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="history" id="jkz-uL-Gld"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uE2-Mq-6eF">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xRc-F7-5Px" kind="relationship" relationship="rootViewController" id="eAx-Iu-WOJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CYI-i4-bP3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.84615384615381" y="688.86255924170609"/>
         </scene>
     </scenes>
     <resources>
