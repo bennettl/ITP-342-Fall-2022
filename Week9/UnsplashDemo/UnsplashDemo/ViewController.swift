@@ -82,6 +82,9 @@ class ViewController: UIViewController {
 
             // Ok we got back a Data object....but how do work with that?
             
+            // { "id": "abc" } => Photo
+            // [ { "id": "abc" } ] => Array<Photo>
+            
             do {
                 let decoder = JSONDecoder()
                 let photo = try decoder.decode(Photo.self, from: data!)
